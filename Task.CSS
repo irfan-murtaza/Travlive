@@ -1,0 +1,434 @@
+body {
+  font-family: "Roboto",sans-serif;
+  font-size: 16px;
+}
+
+.navbar-parent-div{
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 50px;
+  justify-content: space-between;
+
+}
+.navbar-parent-div>.child{
+  display: flex;
+  align-items: center;
+  padding-right: 4%;
+}
+.navbar-parent-div>.child>.nav-buttons{
+  margin-left: 40px;
+}
+.navbar-parent-div>.child>.nav-buttons ~ .contact{
+  padding-top: 17px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  background-color: #ffca3d;
+  color:white;
+  border-radius:8px;
+  display: flex;
+}
+.contact-button{
+  font-weight: bold;
+  font-size:19px;
+}
+.container-heading{
+  margin-top:100px;
+}
+.container-heading > .life-long-memories{
+  font-size: 65px;
+  font-weight: bold;
+}
+.container-heading .lets-start-your-journey{
+  font-size: 20px;
+}
+.remove-underline-link{
+  text-decoration: none;
+  font-size: 16px;
+}
+.upcoming-events> h4{
+  font-size:40px;
+}
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+.services-time{
+  border-radius: 100px;
+  background-color: #e4d9d9;
+  font-size: 12px;
+}
+.days-padding{
+  margin-right: 105px;
+  padding-top: 5px;
+}
+.About-display-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.About-us{
+  margin-top: 4%;
+  padding-left: 9%;
+  max-width:50%
+}
+.about-us-text-heading{
+  font-size:50px;
+  font-weight:bold;
+}
+.about-us-text{
+  color: #a09595;
+  line-height: 30px;
+  font-size: 15px;
+}
+.services-pics-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.back-content{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  line-height: 20 points;
+}
+.background-customer{
+  background-image: url("test project 8/back2.png");
+  padding-bottom:6%;
+  padding-top: 11%;
+  padding-left: 30%;
+  padding-right: 30%;
+
+}
+
+.CEO-Flex{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  padding-left: 35%;
+  margin-top:5%;
+}
+
+.videoo{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.background-video{
+  background-image: url("test project 8/video-bg.png");
+  padding-bottom:18%;
+  padding-top: 18%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.footer-instagram{
+  display:flex;
+  block-size: 10%;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.insta-imgs{
+  width: 20%;
+}
+.footer-content{
+  background-color:#101d44;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top:8%;
+  padding-bottom:10%
+}
+.footer-text{
+  color: #77799f;
+  margin-top: 11%;
+  line-height:40px;
+  font-size:20px;
+}
+.fa{
+  color: white;
+}
+
+.columns{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.column-1{
+  width:30%
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+  padding-right: 17%;
+}
+
+.dropdown > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.dropdown > label,
+.dropdown > a[role="button"] {
+  display: inline-block;
+  padding: 6px 15px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+  border-radius:5px
+  
+
+}
+
+
+.dropdown > ul {
+  position: absolute;
+  display: block;
+  left: -100vw;
+  padding: 6px 0;
+  list-style: none;
+  width: 100%;
+  background-color: white;
+}
+
+.dropdown > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+.copy-right{
+  display: flex;
+  justify-content: center;
+}
+.line-behind{
+  background: linear-gradient(0deg, rgba(255,0,255,0) 16%, yellow 16%, yellow 41%, rgba(255,0,255,0) 41%);
+}
+.line-heading-row{
+  max-width:46%;
+  margin-left: 28%;
+}
+
+
+.text-container {
+  width: fit-content;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-container p {
+  height: 100%;
+  white-space: nowrap;
+}
+
+.line {
+  position: absolute;
+  bottom: 37px;
+  height: 16px;
+  width: 510px;
+  background-color: yellow;
+  z-index: -100;
+}
+
+@media screen and (max-width:1000px) {
+  .dropdown{
+    display: inline-block;
+    flex-direction: column;
+  }
+  .navbar-parent-div>.child{
+    display: none
+  }
+  .container-heading > .life-long-memories{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .line {
+    position: absolute;
+    bottom: 30px;
+    height: 16px;
+    width: 400px;
+    background-color: yellow;
+    z-index: -100;
+  }
+  .container-heading .lets-start-your-journey{
+    font-size: 15px;
+  }
+  .remove-underline-link{
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .upcoming-events> h4{
+    font-size:35px;
+  }
+  
+  
+  .background-customer{
+    background-image: url("test project 8/back2.png");
+    padding-bottom:6%;
+    padding-top: 11%;
+    padding-left: 8%;
+    padding-right: 8%;
+  
+  }
+  .coluumn{
+    margin-top: 10%;
+    width:50%;
+    padding-left: 10%
+  }
+  .column-1{
+    width:50%;
+    padding-left: 10% 
+  }
+  .column-2{
+    width:50%;
+    padding-left: 10% 
+  }
+  .About-us{
+    margin-top: 4%;
+    margin-left: 14%;
+    max-width:100%
+  }
+  
+
+}
+
+@media screen and (max-width:800px) {
+  .container-heading > .life-long-memories{
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .line {
+    position: absolute;
+    bottom: 30px;
+    height: 10px;
+    width: 280px;
+    background-color: yellow;
+    z-index: -100;
+  }
+  .container-heading .lets-start-your-journey{
+    font-size: 10px;
+  }
+  .remove-underline-link{
+    text-decoration: none;
+    font-size: 22px;
+  }
+  .upcoming-events> h4{
+    font-size:30px;
+  }
+  .about-us-text-heading{
+    font-size:20px;
+    font-weight:bold;
+  }
+  .background-customer{
+    background-image: url("test project 8/back2.png");
+    padding-bottom:6%;
+    padding-top: 11%;
+    padding-left: 4%;
+    padding-right: 4%;
+  
+  }
+  .coluumn{
+    margin-top: 10%;
+    width:100%;
+    padding-left: 10%
+  }
+  .column-1{
+    width:100%;
+    padding-left: 10% 
+  }
+  .column-2{
+    margin-top: 10%;
+    width:100%;
+    padding-left: 10%
+  }
+  .copy-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }  
+}
+
+@media  screen and (max-width:1400px) {
+  .insta-service-3 {
+    display: none;
+  }
+  /* .container-heading > .life-long-memories{
+    font-size: 55px;
+    font-weight: bold;
+  } */
+  .About-us{
+    margin-top: 4%;
+    padding-left: 25%;
+    padding-right: 20%;
+    max-width:100%
+  }
+}
+
+@media screen and (max-width:1200px){
+  .insta-service-3 {
+    display: none;
+  }
+  .insta-service-2{
+    display: none;
+  }
+  /* .container-heading > .life-long-memories{
+    font-size: 45px;
+    font-weight: bold;
+  } */
+  .About-us{
+    margin-top: 4%;
+    padding-left: 8%;
+    padding-right: 10%;
+    max-width:100%
+  }
+  /* .line {
+    position: absolute;
+    bottom: 25px;
+    height: 16px;
+    width: 38%;
+    background-color: yellow;
+    z-index: -100;
+  } */
+}
+@media screen and (max-width: 700px) {
+  .left-angle{
+    display: none;
+  }
+  .right-angle{
+    display: none;
+  }
+  
+}
+@media screen and (max-width:1700px) and (min-width:1400px){
+  .About-us{
+    margin-top: 4%;
+    padding-left: 34%;
+    padding-right: 25%;
+    max-width:100%
+  } 
+}
+@media screen and (max-width:400px){
+   .line {
+    position: absolute;
+    bottom: 25px;
+    height: 16px;
+    width: 200px;
+    background-color: yellow;
+    z-index: -100;
+  }
+  .container-heading > .life-long-memories{
+    font-size: 25px;
+    font-weight: bold;
+  } 
+}
